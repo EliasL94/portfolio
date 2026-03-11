@@ -56,11 +56,11 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-10 flex items-center justify-center gap-4"
+          className="mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
         >
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-all hover:bg-white/90"
+            className="group relative inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition-all hover:bg-white/90 sm:px-6 sm:py-3"
           >
             Voir les projets
             <svg
@@ -77,9 +77,26 @@ export default function Hero() {
             href="https://github.com/EliasL94"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white/70 backdrop-blur-md transition-all hover:border-white/20 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-2.5 text-sm font-medium text-white/70 backdrop-blur-md transition-all hover:border-white/20 hover:text-white sm:px-6 sm:py-3"
           >
             GitHub
+          </a>
+          <a
+            href="/cv/CV-Elias-alternance.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-all hover:border-white/20 hover:bg-white/10"
+          >
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Mon CV
           </a>
         </motion.div>
       </motion.div>
