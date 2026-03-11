@@ -40,6 +40,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Analytics } from "@vercel/analytics/react";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,6 +53,7 @@ export default function RootLayout({
         className={`${inter.variable} bg-black font-sans text-white antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
