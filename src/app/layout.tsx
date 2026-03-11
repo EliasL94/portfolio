@@ -9,9 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Elias Louhichi — Développeur Full-Stack",
+  title: "Elias Louhichi — Développeur Full-Stack | Portfolio & Projets",
   description:
-    "Portfolio d'Elias Louhichi, développeur Full-Stack passionné par la création d'interfaces modernes et d'applications web performantes.",
+    "Elias Louhichi, développeur Full-Stack passionné par Next.js, React et le design moderne. En recherche active d'alternance sur Paris et en télétravail.",
+  keywords: ["Développeur Full-Stack", "Alternance Développeur", "Next.js", "React", "Portfolio Elias Louhichi", "UI/UX Design"],
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Elias Louhichi — Développeur Full-Stack",
     description: "Portfolio d'Elias Louhichi, développeur Full-Stack passionné par la création d'interfaces modernes et d'applications web performantes.",
