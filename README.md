@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Ultra-Moderne - Elias Louhichi
 
-## Getting Started
+Ce projet est un portfolio personnel ultra-moderne conçu avec **Next.js**, **Tailwind CSS** et **Framer Motion**. Il présente une interface élégante de type SPA (Single Page Application) avec un design inspiré de l'esthétique Apple/Linear.
 
-First, run the development server:
+## ✨ Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Design Premium** : Esthétique sombre, effets de flou (backdrop-blur), et animations fluides.
+- **Grille de Projets Interactive** : Présentation des projets sous forme de cartes avec animations au survol.
+- **Modales de Détails** : Chaque projet dispose d'une vue détaillée avec galerie d'images, descriptions complètes et liens GitHub/Démo.
+- **Optimisation des Images** : Utilisation de `next/image` et support des formats SVG/PNG avec gestion personnalisée du cadrage.
+- **Responsive Design** : Entièrement adapté aux mobiles, tablettes et écrans larges.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Stack Technique
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework** : [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling** : [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/)
+- **Icônes** : [Lucide React](https://lucide.dev/)
+- **Langage** : TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Installation Locale
 
-## Learn More
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/EliasL94/portfolio.git
+   cd portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-## Deploy on Vercel
+## 📦 Structure du Projet
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `src/components/` : Contient les composants UI (Hero, BentoGrid, ProjectCard, ProjectModal).
+- `src/data/` : Contient le fichier `projects.ts` qui centralise toutes les données des projets.
+- `public/images/` : Stocke les logos et captures d'écran des projets.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Déploiement sur Vercel
+
+La méthode la plus simple pour déployer ce projet est d'utiliser la [plateforme Vercel](https://vercel.com/new).
+
+1. Connectez votre compte GitHub à Vercel.
+2. Importez le dépôt `portfolio`.
+3. Cliquez sur **Deploy**.
+
+---
+Développé avec ❤️ par Elias Louhichi.
