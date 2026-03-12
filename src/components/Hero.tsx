@@ -82,6 +82,12 @@ export default function Hero() {
             GitHub
           </a>
           <a
+            href="/lab"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/70 backdrop-blur-md transition-all hover:border-accent/30 hover:bg-accent/10 hover:text-accent sm:px-6 sm:py-3"
+          >
+            🧪 The Lab
+          </a>
+          <a
             href="/cv/CV-Elias-alternance.pdf"
             target="_blank"
             rel="noopener noreferrer"
