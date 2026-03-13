@@ -130,22 +130,24 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
           {/* Content */}
           <div className="p-6 sm:p-8">
-            <motion.h2
-              layoutId={`title-${project.id}`}
-              className="mb-2 text-2xl font-bold text-white sm:text-3xl"
-            >
-              {project.title}
-            </motion.h2>
+            <div className="mb-4 flex flex-wrap items-center gap-4">
+              <motion.h2
+                layoutId={`title-${project.id}`}
+                className="text-2xl font-bold text-white sm:text-3xl"
+              >
+                {project.title}
+              </motion.h2>
 
-            {project.demoLink && (
-              <div className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-400">
-                <span className="relative flex h-1.5 w-1.5">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                </span>
-                Live
-              </div>
-            )}
+              {project.demoLink && (
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-400">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  </span>
+                  Live
+                </div>
+              )}
+            </div>
 
             {/* Action links - Moved to top for immediate visibility */}
             <div className="mb-8 flex flex-wrap items-center gap-3">
