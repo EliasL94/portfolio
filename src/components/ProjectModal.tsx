@@ -64,9 +64,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute right-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.05] text-white/50 backdrop-blur-md transition-all hover:bg-white/[0.1] hover:text-white"
+            className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white shadow-lg backdrop-blur-xl transition-all hover:bg-black/60 hover:scale-110 active:scale-95"
           >
-            <X className="h-4 w-4" />
+            <X className="h-5 w-5" />
           </button>
 
           {/* Image gallery */}
@@ -104,29 +104,29 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                       (p) => (p - 1 + displayImages.length) % displayImages.length
                     )
                   }
-                  className="absolute left-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/50 text-white/60 backdrop-blur-md transition-all hover:bg-black/70 hover:text-white"
+                  className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white shadow-lg backdrop-blur-xl transition-all hover:bg-black/60 hover:scale-110"
                 >
-                  <ChevronLeft className="h-4 w-4" />
+                  <ChevronLeft className="h-5 w-5" />
                 </button>
                 <button
                   onClick={() =>
                     setCurrentImage((p) => (p + 1) % displayImages.length)
                   }
-                  className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/50 text-white/60 backdrop-blur-md transition-all hover:bg-black/70 hover:text-white"
+                  className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white shadow-lg backdrop-blur-xl transition-all hover:bg-black/60 hover:scale-110"
                 >
-                  <ChevronRight className="h-4 w-4" />
+                  <ChevronRight className="h-5 w-5" />
                 </button>
 
                 {/* Dots */}
-                <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+                <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-black/40 px-2.5 py-1.5 shadow-lg backdrop-blur-xl">
                   {displayImages.map((_, i) => (
                     <button
                       key={i}
                       onClick={() => setCurrentImage(i)}
                       className={`h-1.5 rounded-full transition-all ${
                         i === currentImage
-                          ? "w-6 bg-white/80"
-                          : "w-1.5 bg-white/20 hover:bg-white/40"
+                          ? "w-5 bg-white"
+                          : "w-1.5 bg-white/40 hover:bg-white/60"
                       }`}
                     />
                   ))}
