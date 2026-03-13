@@ -81,7 +81,6 @@ export const projects: Project[] = [
       "/images/fontaines-de-paris-0.png",
       "/images/fontaines-de-paris-1.png",
       "/images/fontaines-de-paris-2.png",
-      "/images/fontaines-de-paris-3.gif",
     ],
     tags: ["HTML", "CSS", "JavaScript", "Leaflet.js", "PHP", "MySQL", "OpenStreetMap", "OSRM"],
     githubLink: "https://github.com/EliasL94/Projet-Web",
