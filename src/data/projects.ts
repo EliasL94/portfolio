@@ -79,9 +79,9 @@ export const projects: Project[] = [
       "Ce projet web permet aux utilisateurs de localiser toutes les fontaines à boire de Paris sur une carte interactive. Il utilise Leaflet.js pour le rendu cartographique (tuiles OpenStreetMap), la géolocalisation automatique du navigateur pour centrer la carte sur l'utilisateur, et le moteur de routage OSRM pour calculer l'itinéraire jusqu'à la fontaine la plus proche. Les données des fontaines proviennent de l'Open Data de la Ville de Paris. Une base de données MySQL avec PHP est utilisée côté serveur pour la gestion des données. Le projet est documenté avec un dossier /doc complet incluant le schéma de BDD, le workflow de développement et le guide d'installation.",
     images: [
       "/images/fontaines-de-paris-0.png",
-      "placeholder",
-      "placeholder",
-      "placeholder",
+      "/images/fontaines-de-paris-1.png",
+      "/images/fontaines-de-paris-2.png",
+      "/images/fontaines-de-paris-3.gif",
     ],
     tags: ["HTML", "CSS", "JavaScript", "Leaflet.js", "PHP", "MySQL", "OpenStreetMap", "OSRM"],
     githubLink: "https://github.com/EliasL94/Projet-Web",
