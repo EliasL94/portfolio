@@ -129,9 +129,12 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
           )}
         </div>
 
-        {/* Hover reveal arrow */}
-        <div className="absolute bottom-5 right-5 flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] opacity-0 transition-all duration-300 group-hover:opacity-100">
-          <ExternalLink className="h-3.5 w-3.5 text-white/60" />
+        {/* Hover reveal indicator */}
+        <div className="absolute bottom-5 right-5 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 pl-3 pr-2 py-1 opacity-0 transition-all duration-300 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
+          <span className="text-[10px] font-bold uppercase tracking-wider text-white/50">Voir détails</span>
+          <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-black">
+            <ExternalLink className="h-3 w-3" />
+          </div>
         </div>
       </div>
     </motion.div>

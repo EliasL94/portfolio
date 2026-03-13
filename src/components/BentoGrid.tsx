@@ -53,6 +53,36 @@ export default function BentoGrid() {
           )}
         </AnimatePresence>
       </LayoutGroup>
+
+      {/* Transition to Workflow */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="mt-20 flex justify-center"
+      >
+        <a
+          href="#workflow"
+          className="group flex flex-col items-center gap-3 text-sm text-white/20 transition-colors hover:text-white/40"
+        >
+          <span>Découvrir ma méthode de travail</span>
+          <motion.div
+            animate={{ y: [0, 5, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="rounded-full border border-white/10 p-2"
+          >
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </motion.div>
+        </a>
+      </motion.div>
     </section>
   );
 }

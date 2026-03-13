@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
+import Workflow from "@/components/Workflow";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
 
       <Hero />
       <BentoGrid />
+      <Workflow />
 
       {/* Footer */}
       <footer className="border-t border-white/[0.05] px-6 py-12 text-center">

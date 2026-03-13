@@ -147,60 +147,67 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               </div>
             )}
 
-            <p className="mb-6 leading-relaxed text-white/50">
-              {project.longDescription}
-            </p>
-
-            {/* Tech Badges */}
-            <div className="mb-8">
-              <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/30">
-                Technologies
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1 text-sm text-white/60 transition-colors hover:border-white/[0.15] hover:text-white/80"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Action links */}
-            <div className="flex flex-wrap gap-3">
+            {/* Action links - Moved to top for immediate visibility */}
+            <div className="mb-8 flex flex-wrap items-center gap-3">
+              {project.demoLink && (
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/demo inline-flex items-center gap-2.5 rounded-xl bg-white px-6 py-3 text-sm font-bold text-black transition-all hover:scale-[1.02] hover:bg-white/90 active:scale-[0.98]"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  Démo Live
+                </a>
+              )}
               <a
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.05] px-5 py-2.5 text-sm font-medium text-white/70 backdrop-blur-md transition-all hover:border-white/[0.2] hover:bg-white/[0.08] hover:text-white"
+                className="group/link inline-flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white transition-all hover:border-white/20 hover:bg-white/10"
               >
                 <Github className="h-4 w-4" />
-                {project.githubLinkBack ? "Front-end" : "Voir le code"}
+                {project.githubLinkBack ? "Code Front" : "Voir le code"}
               </a>
               {project.githubLinkBack && (
                 <a
                   href={project.githubLinkBack}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.05] px-5 py-2.5 text-sm font-medium text-white/70 backdrop-blur-md transition-all hover:border-white/[0.2] hover:bg-white/[0.08] hover:text-white"
+                  className="group/link inline-flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white transition-all hover:border-white/20 hover:bg-white/10"
                 >
                   <Github className="h-4 w-4" />
-                  Back-end
+                  Code Back
                 </a>
               )}
-              {project.demoLink && (
-                <a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition-all hover:bg-white/90"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  Démo Live
-                </a>
-              )}
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/30">
+                  À propos du projet
+                </h4>
+                <p className="leading-relaxed text-white/50">
+                  {project.longDescription}
+                </p>
+              </div>
+
+              {/* Tech Badges */}
+              <div>
+                <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/30">
+                  Technologies
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1 text-sm text-white/60 transition-colors hover:border-white/[0.15] hover:text-white/80"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
