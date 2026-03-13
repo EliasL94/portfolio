@@ -6,26 +6,26 @@ import { useState, useRef } from "react";
 
 const steps = [
   {
-    title: "Analyse & Architecture",
-    description: "Définition des besoins, schématisation des bases de données et choix des patterns (ex: Laravel Actions) pour un code robuste et évolutif.",
+    title: "Comprendre & Organiser",
+    description: "Avant de coder, je prends le temps de bien imaginer le projet pour construire une base solide et bien structurée.",
     icon: Database,
     color: "blue",
   },
   {
-    title: "Conception UI/UX",
-    description: "Création d'interfaces modernes et intuitives, avec un focus sur l'accessibilité et la cohérence de la charte graphique.",
+    title: "Design & Visuel",
+    description: "J'imagine une interface jolie, moderne et surtout très simple à utiliser pour tout le monde.",
     icon: Layout,
     color: "purple",
   },
   {
-    title: "Développement Full-Stack",
-    description: "Implémentation de la logique métier et des composants interactifs avec Next.js, React ou PHP/Laravel, selon les besoins du projet.",
+    title: "Le Code",
+    description: "Je donne vie au projet en écrivant un code soigné, que ce soit pour ce qu'on voit à l'écran ou pour les coulisses.",
     icon: Code2,
     color: "emerald",
   },
   {
-    title: "Optimisation & Déploiement",
-    description: "Tests rigoureux, optimisations SEO/Lighthouse et mise en production continue pour garantir rapidité et stabilité.",
+    title: "Mise en Ligne",
+    description: "Je vérifie que chaque détail fonctionne parfaitement avant de lancer officiellement le site sur le web.",
     icon: Rocket,
     color: "amber",
   },
@@ -45,11 +45,11 @@ export default function Workflow() {
         className="mx-auto mb-16 max-w-2xl text-center"
       >
         <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
-          Ma Méthode de Travail
+          Comment je travaille
         </h2>
         <p className="text-white/40">
-          Une approche structurée pour transformer une idée en une application web performante, 
-          du premier schéma technique à la mise en ligne.
+          De la première idée jusqu&apos;à la mise en ligne, voici les étapes 
+          que je suis pour créer des projets de qualité.
         </p>
       </motion.div>
 
