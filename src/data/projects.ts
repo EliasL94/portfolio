@@ -21,8 +21,6 @@ export const projects: Project[] = [
     images: [
       "/images/mixone-0.svg",
       "/images/mixone-1.png",
-      "placeholder",
-      "placeholder",
     ],
     tags: ["Laravel 10", "PHP", "MySQL", "Blade", "JavaScript", "CSS"],
     githubLink: "https://github.com/EliasL94/MixOne/tree/dev",
@@ -37,9 +35,6 @@ export const projects: Project[] = [
       "Toile de Maître est un site vitrine moderne conçu pour une SAS spécialisée dans la maçonnerie générale et le gros œuvre. L'objectif était de transformer une expertise artisanale de plus de 35 ans en une présence numérique élégante. Le site intègre une Lightbox personnalisée pour naviguer à travers des galeries de photos HD des chantiers, un bouton d'appel flottant toujours accessible sur mobile, un formulaire de devis intelligent intégré avec EmailJS, et des sections de statistiques (35 ans d'expérience, 1000+ projets) pour établir une autorité immédiate. Pensé Mobile-First avec des scores de performance exceptionnels grâce à Vite, le code est structuré de manière sémantique pour favoriser le SEO. Le contenu est géré via un fichier content.js pour permettre des mises à jour rapides sans toucher au code source.",
     images: [
       "/images/toile-de-maitre-0.png",
-      "placeholder",
-      "placeholder",
-      "placeholder",
     ],
     tags: ["React 19", "Vite", "Tailwind CSS 4", "Framer Motion", "EmailJS", "Lucide React"],
     githubLink: "https://github.com/EliasL94/toile-de-maitre",

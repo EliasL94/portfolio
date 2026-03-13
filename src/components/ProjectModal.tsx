@@ -12,18 +12,25 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
-  // Filter out the cover image (-0) from the gallery to avoid showing logos inside the modal
-  const galleryImages = project.images.filter(img => !img.includes("-0."));
+  // Filter out the cover image (-0) and placeholders from the gallery
+  const galleryImages = project.images.filter(
+    (img) => !img.includes("-0.") && img !== "placeholder"
+  );
+
+  // If no images left (e.g. only one image exists and it's a -0), use the first one available
+  const displayImages = galleryImages.length > 0 ? galleryImages : [project.images[0]];
 
   const [currentImage, setCurrentImage] = useState(0);
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") setCurrentImage((p) => (p + 1) % galleryImages.length);
-      if (e.key === "ArrowLeft") setCurrentImage((p) => (p - 1 + galleryImages.length) % galleryImages.length);
+      if (e.key === "ArrowRight")
+        setCurrentImage((p) => (p + 1) % displayImages.length);
+      if (e.key === "ArrowLeft")
+        setCurrentImage((p) => (p - 1 + displayImages.length) % displayImages.length);
     },
-    [onClose, galleryImages.length]
+    [onClose, displayImages.length]
   );
 
   useEffect(() => {
@@ -68,9 +75,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             className="relative aspect-[16/9] w-full overflow-hidden bg-gradient-to-br from-accent/10 via-transparent to-accent/5"
           >
             <div className="flex h-full items-center justify-center">
-              {galleryImages[currentImage] && !galleryImages[currentImage].includes("placeholder") ? (
+              {displayImages[currentImage] && displayImages[currentImage] !== "placeholder" ? (
                 <Image
-                  src={galleryImages[currentImage]}
+                  src={displayImages[currentImage]}
                   alt={`${project.title} - ${currentImage + 1}`}
                   fill
                   className="object-cover"
@@ -82,19 +89,19 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     {project.title.charAt(0)}
                   </span>
                   <p className="mt-2 text-xs text-white/20">
-                    {currentImage + 1} / {galleryImages.length || 1}
+                    {currentImage + 1} / {displayImages.length || 1}
                   </p>
                 </div>
               )}
             </div>
 
             {/* Gallery navigation */}
-            {galleryImages.length > 1 && (
+            {displayImages.length > 1 && (
               <>
                 <button
                   onClick={() =>
                     setCurrentImage(
-                      (p) => (p - 1 + galleryImages.length) % galleryImages.length
+                      (p) => (p - 1 + displayImages.length) % displayImages.length
                     )
                   }
                   className="absolute left-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/50 text-white/60 backdrop-blur-md transition-all hover:bg-black/70 hover:text-white"
@@ -103,7 +110,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </button>
                 <button
                   onClick={() =>
-                    setCurrentImage((p) => (p + 1) % galleryImages.length)
+                    setCurrentImage((p) => (p + 1) % displayImages.length)
                   }
                   className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/50 text-white/60 backdrop-blur-md transition-all hover:bg-black/70 hover:text-white"
                 >
@@ -112,7 +119,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
                 {/* Dots */}
                 <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
-                  {galleryImages.map((_, i) => (
+                  {displayImages.map((_, i) => (
                     <button
                       key={i}
                       onClick={() => setCurrentImage(i)}
