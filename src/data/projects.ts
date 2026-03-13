@@ -61,7 +61,6 @@ export const projects: Project[] = [
       "/images/justpay-9.png",
       "/images/justpay-10.png",
       "/images/justpay-11.png",
-      "/images/justpay-12.png",
       "/images/justpay-13.png",
       "/images/justpay-14.png",
       "/images/justpay-15.png",
