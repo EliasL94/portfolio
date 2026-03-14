@@ -144,8 +144,9 @@ export const projects: Project[] = [
     images: [
       "/images/quiz-android-0.png",
       "/images/quiz-android-1.png",
-      "placeholder",
-      "placeholder",
+      "/images/quiz-android-2.png",
+      "/images/quiz-android-3.png",
+      "/images/quiz-android-demo.gif",
     ],
     tags: ["Android", "Java", "XML", "Mobile Dev", "Android Studio"],
     githubLink: "https://github.com/Joss-inf/2025-Android-B2-Paris-Groupe-G3/tree/dev",
