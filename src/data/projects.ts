@@ -95,9 +95,9 @@ export const projects: Project[] = [
       "Image Editor CLI est une application interactive en ligne de commande développée en Python permettant de manipuler et de transformer des images. L'utilisateur peut charger une image locale et lui appliquer divers filtres : Flou Gaussien, Dilatation Topologique (via OpenCV), conversion Noir & Blanc, redimensionnement dynamique, rotation libre et annotation personnalisée (texte avec gestion de police, taille et couleur). Le projet utilise Pillow pour la manipulation d'images, OpenCV pour les transformations morphologiques complexes, et NumPy pour la gestion des matrices d'images. Ce projet met l'accent sur la programmation modulaire et la vision par ordinateur.",
     images: [
       "/images/image-editor-0.png",
-      "placeholder",
-      "placeholder",
-      "placeholder",
+      "/images/image-editor-1.png",
+      "/images/image-editor-2.png",
+      "/images/image-editor-demo.gif",
     ],
     tags: ["Python", "Pillow", "OpenCV", "NumPy", "CLI"],
     githubLink: "https://github.com/MonsoonD/Image-Editor",
