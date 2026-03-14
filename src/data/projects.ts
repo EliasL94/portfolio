@@ -110,10 +110,9 @@ export const projects: Project[] = [
     longDescription:
       "Développé en équipe de 4, ce projet est un jeu d'aventure 2D complet réalisé avec Unity et C#. Le joueur doit explorer un monde complexe, résoudre des énigmes, et affronter divers ennemis jusqu'à un Boss final. J'ai co-développé des scripts C# complexes pour gérer les mécaniques spéciales de parcours (double saut, dash), le système de quêtes et l'intelligence artificielle des ennemis. Le projet inclut également un éditeur de cartes (Map Editor) sur mesure pour faciliter la création de niveaux et la gestion des assets.",
     images: [
-      "/images/unity-0.png",
-      "placeholder",
-      "placeholder",
-      "placeholder",
+      "/images/unity-1.png",
+      "/images/unity-2.png",
+      "/images/unity-demo.gif",
     ],
     tags: ["Unity", "C#", "Game Dev", "2D", "Map Editor"],
     githubLink: "https://github.com/felicienbouryesieeit/platformernew",
