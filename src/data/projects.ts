@@ -127,9 +127,9 @@ export const projects: Project[] = [
       "Ce projet consiste en la création d'un outil de gestion backend robuste pour une pharmacie, développé en Java. Il permet de centraliser les opérations critiques liées aux stocks et aux flux de commandes. Fonctionnalités clés : gestion d'inventaire complète (CRUD) avec recherche optimisée via algorithme de recherche binaire, système de validation de commandes en temps réel, alertes automatiques de stock critique (seuil < 5 unités) et historique détaillé des transactions. L'architecture repose sur les principes de la POO (classes abstraites, interfaces, collections Java) pour garantir un code modulaire, performant et facilement évolutif.",
     images: [
       "/images/pharmacie-0.png",
-      "placeholder",
-      "placeholder",
-      "placeholder",
+      "/images/pharmacie-1.png",
+      "/images/pharmacie-2.png",
+      "/images/pharmacie-3.png",
     ],
     tags: ["Java", "POO", "Algorithmique", "Gestion de Stock", "JDK 17"],
     githubLink: "https://github.com/V0one/PooJava/tree/dev",
@@ -143,7 +143,6 @@ export const projects: Project[] = [
       "Dans le cadre de ma formation, j'ai conçu et développé une application mobile Android native permettant de réaliser des quiz interactifs sur la culture informatique. L'application gère des sessions de quiz dynamiques avec sélection aléatoire des questions chargées via un fichier externe (assets). Le projet met l'accent sur la gestion rigoureuse du cycle de vie des Activités (sauvegarde du score lors de la rotation d'écran) et une navigation fluide via Intents. L'interface utilise XML avec un design adaptatif (Edge-to-Edge). Ce projet m'a permis de consolider mes bases en développement Android, manipulation de Listes et architecture via Singletons.",
     images: [
       "/images/quiz-android-0.png",
-      "/images/quiz-android-1.png",
       "/images/quiz-android-2.png",
       "/images/quiz-android-3.png",
       "/images/quiz-android-demo.gif",
