@@ -23,8 +23,8 @@ export const projects: Project[] = [
       "/images/mixone-1.png",
     ],
     tags: ["Laravel 10", "PHP", "MySQL", "Blade", "JavaScript", "CSS"],
-    githubLink: "https://github.com/EliasL94/MixOne/tree/dev",
-    demoLink: "https://mixone.up.railway.app",
+    githubLink: "https://github.com/EliasL94/MixOne/tree/main",
+    demoLink: "https://www.mixone.fr/",
   },
   {
     id: "toile-de-maitre",
