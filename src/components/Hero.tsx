@@ -88,7 +88,7 @@ export default function Hero() {
             Ma Méthode
           </a>
           <a
-            href="/cv/CV-Elias-alternance.pdf"
+            href="/cv/CV_Elias_Louhichi_Developpeur_Fullstack.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-all hover:border-white/20 hover:bg-white/10"
