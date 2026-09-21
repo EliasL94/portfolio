@@ -5,7 +5,7 @@ export interface Project {
   longDescription: string;
   images: string[];
   tags: string[];
-  githubLink: string;
+  githubLink?: string;
   githubLinkBack?: string;
   demoLink?: string;
 }
@@ -69,6 +69,24 @@ export const projects: Project[] = [
     tags: ["React", "FastAPI", "Python", "SQLite", "SQLModel", "JWT", "Pydantic", "Passlib"],
     githubLink: "https://github.com/EliasL94/JustPayFront",
     githubLinkBack: "https://github.com/Matheo-sys/JustPay",
+  },
+  {
+    id: "profacture",
+    title: "ProFacture",
+    description:
+      "Logiciel métier sur-mesure de devis et facturation avec assistant IA pour une entreprise de maçonnerie.",
+    longDescription:
+      "ProFacture est un logiciel de gestion développé spécifiquement pour l'entreprise Toile de Maître. Il s'agit d'une application locale avec un backend robuste en Python (FastAPI, SQLite) et une interface Single Page Application réactive en Vanilla JS. L'outil centralise la gestion des clients et du catalogue, et permet l'édition de devis avec génération PDF automatisée. L'innovation majeure réside dans l'intégration de l'API Google Gemini, agissant comme un assistant IA capable d'analyser et structurer des données complexes. Un tableau de bord analytique (Chart.js) offre une vue globale sur les performances financières.",
+    images: [
+      "/images/profacture-0.png",
+      "/images/profacture-1.png",
+      "/images/profacture-2.png",
+      "/images/profacture-3.png",
+      "/images/profacture-4.png",
+      "/images/profacture-5.png",
+    ],
+    tags: ["Python", "FastAPI", "JavaScript", "Google Gemini AI", "SQLite", "Chart.js"],
+    githubLink: "https://github.com/EliasL94/ProFacture",
   },
   {
     id: "fontaines-paris",

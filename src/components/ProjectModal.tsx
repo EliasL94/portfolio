@@ -169,15 +169,17 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   Démo Live
                 </a>
               )}
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group/link inline-flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white transition-all hover:border-white/20 hover:bg-white/10"
-              >
-                <Github className="h-4 w-4" />
-                {project.githubLinkBack ? "Code Front" : "Voir le code"}
-              </a>
+              {project.githubLink && (
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/link inline-flex items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white transition-all hover:border-white/20 hover:bg-white/10"
+                >
+                  <Github className="h-4 w-4" />
+                  {project.githubLinkBack ? "Code Front" : "Voir le code"}
+                </a>
+              )}
               {project.githubLinkBack && (
                 <a
                   href={project.githubLinkBack}
